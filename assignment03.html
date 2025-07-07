@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Strath Bedsitters</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style03.css">
+</head>
+<body onload="startClock()">
+
+  <!-- 🔝 Top Bar with Clock and Dark Mode -->
+  <div class="top-bar">
+    <div></div> <!-- placeholder for left spacing -->
+    <div id="clock"></div>
+    <button onclick="toggleDarkMode()"><span id="modeIcon">🌞</span></button>
+  </div>
+
+  <!-- 🧭 Navigation -->
+  <nav class="navbar">
+    <div class="logo">Strath Bedsitters</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#book">Book</a></li>
+      <li><a href="#signup">Sign Up</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <!-- 🏠 Hero Section -->
+  <section id="home" class="hero">
+    <h1>Affordable Bedsitters for Strathmore Students</h1>
+    <p>Enjoy comfort, safety, and convenience—right next to campus!</p>
+    <img src="https://media.istockphoto.com/id/1335298573/photo/day-of-a-college-student.jpg?s=612x612&w=0&k=20&c=n-nS2MfQK21xXnOrmJxaMisIhrmxZgjG2Gt0m-U15zA=" alt="Happy Student on Bed">
+  </section>
+
+  <!-- 📄 Booking Form -->
+  <section id="book" class="section">
+    <h2>Book a Bedsitter</h2>
+    <form class="styled-form">
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" required>
+
+      <label for="movein">Move-In Date</label>
+      <input type="date" id="movein" required>
+
+      <label for="duration">Duration (months)</label>
+      <input type="number" id="duration" min="1" max="12" required>
+
+      <button type="submit">Book Now</button>
+    </form>
+  </section>
+
+  <!-- 📝 Sign Up / Login -->
+  <section id="signup" class="section">
+    <h2>Sign Up / Login</h2>
+    <form class="styled-form">
+      <label for="email2">Email</label>
+      <input type="email" id="email2" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" required>
+
+      <div class="password-guidelines">
+        <strong>Password must contain:</strong>
+        <ul>
+          <li>At least 8 characters</li>
+          <li>One uppercase letter</li>
+          <li>One lowercase letter</li>
+          <li>One number</li>
+          <li>One special character (e.g., @, #, !)</li>
+        </ul>
+      </div>
+
+      <button type="submit">Sign Up / Login</button>
+    </form>
+  </section>
+
+  <!-- 🖼️ Gallery -->
+  <section id="gallery" class="section gallery">
+    <h2>Gallery</h2>
+    <div class="image-grid">
+      <figure>
+        <img src="https://i0.wp.com/www.longonotplace.co.ke/wp-content/uploads/2025/03/DSC0016.jpg?resize=755%2C350&ssl=1" alt="Furnished Apartment">
+        <figcaption>Comfortable, Fully Furnished</figcaption>
+      </figure>
+      <figure>
+        <img src="https://img.freepik.com/free-photo/close-up-child-having-fun-before-bed_23-2149241108.jpg?semt=ais_hybrid&w=740" alt="Happy Tenant">
+        <figcaption>Happy Tenant in a Cozy Space</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ⚙️ Footer -->
+  <footer>
+    <p>&copy; 2025 Strath Bedsitters. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script03.js"></script>
+</body>
+</html>
